@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css';
+import CounterButton from './components/CounterButton/CounterButton';
 
 function App() {
   const [count, setCount] = React.useState(0);
@@ -7,7 +8,7 @@ function App() {
     <div className="App">
       <h1>React Counter</h1>
       <h2>{count}</h2>
-      <button onClick = {() => setCount(count + 1)} >Count ++</button>
+      <CounterButton callback={() => setCount(count + 1)} title="Count ++" />
     </div>
   );
 }
