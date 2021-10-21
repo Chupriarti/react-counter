@@ -10,6 +10,7 @@ function App() {
       <h2>{count}</h2>
       <CounterButton callback={() => setCount(count + 1)} title="Count ++" />
       <CounterButton callback={() => setCount(count - 1)} title="Count --" />
+      <CounterButton callback={() => setCount(count * count)} title="Count **" />
     </div>
   );
 }
