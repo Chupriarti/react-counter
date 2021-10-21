@@ -11,7 +11,9 @@ function App() {
       <CounterButton callback={() => setCount(count + 1)} title="Count ++" />
       <hr />
       <CounterButton callback={() => setCount(count - 1)} title="Count --" />
+      <hr />
       <CounterButton callback={() => setCount(count * count)} title="Count **" />
+      <hr />
       <CounterButton callback={() => setCount(count / count)} title="Count //" />
     </div>
   );
