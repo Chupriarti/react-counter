@@ -3,7 +3,9 @@ import './counterButton.css';
 
 const CounterButton = (props) => {
     return (
-        <button className="btn" onClick = {props.callback} >{props.title}</button>
+        <div>
+            <button className="btn" onClick = {props.callback} >{props.title}</button>
+        </div>
     )
 }
 
