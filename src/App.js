@@ -8,7 +8,6 @@ function App() {
   const [count, setCount] = React.useState(0);
   return (
     <div className="App">
-      <h1>React Counter</h1>
       <CountView count={count} />
       <Header title = "React Counter" />
       <CounterButton callback={() => setCount(count + 1)} title="Count ++" />
