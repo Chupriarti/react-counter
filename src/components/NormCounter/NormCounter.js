@@ -13,21 +13,28 @@ export const NormCounter = () => {
       <div className="normCounter">
         <Header title = "React Norm Counter" />
         <CountView count={a + b} />
-        <CounterButton title="1" />
-        <CounterButton title="2" />
-        <CounterButton title="3" />
-        <CounterButton title="4" />
-        <CounterButton title="5" />
-        <CounterButton title="6" />
-        <CounterButton title="7" />
-        <CounterButton title="8" />
-        <CounterButton title="9" />
-        <CounterButton title="0" />
-        <CounterButton title="+" />
-        <CounterButton title="-" />
-        <CounterButton title="*" />
-        <CounterButton title="/" />
-        <CounterButton title="=" />
+        <table>
+          <tr>
+            <td><CounterButton title="1" /></td>
+            <td><CounterButton title="2" /></td>
+            <td><CounterButton title="3" /></td>
+          </tr>
+          <tr>
+            <td><CounterButton title="4" /></td>
+            <td><CounterButton title="5" /></td>
+            <td><CounterButton title="6" /></td>
+          </tr>
+          <tr>
+            <td><CounterButton title="7" /></td>
+            <td><CounterButton title="8" /></td>
+            <td><CounterButton title="9" /></td>
+          </tr>
+          <tr>
+            <td><CounterButton title="+" /></td>
+            <td><CounterButton title="0" /></td>
+            <td><CounterButton title="=" /></td>
+          </tr>
+        </table>
       </div>
     )
 }
