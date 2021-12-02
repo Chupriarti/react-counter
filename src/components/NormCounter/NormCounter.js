@@ -8,6 +8,7 @@ export const NormCounter = () => {
     const [a, setA] = React.useState(null);
     const [b, setB] = React.useState(null);
     const [currentPart, setCurrentPart] = React.useState(0);
+    const [op, setOp] = React.useState(null);
     return (
       <div className="normCounter">
         <Header title = "React Norm Counter" />
@@ -22,6 +23,11 @@ export const NormCounter = () => {
         <CounterButton title="8" />
         <CounterButton title="9" />
         <CounterButton title="0" />
+        <CounterButton title="+" />
+        <CounterButton title="-" />
+        <CounterButton title="*" />
+        <CounterButton title="/" />
+        <CounterButton title="=" />
       </div>
     )
 }
