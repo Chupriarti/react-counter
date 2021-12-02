@@ -10,10 +10,10 @@ export const SimpleCounter = () => {
       <div className="simpleCounter">
         <Header title = "React Simple Counter" />
         <CountView count={count} />
-        <CounterButton callback={() => setCount(count + 1)} title="Count ++" />
-        <CounterButton callback={() => setCount(count - 1)} title="Count --" />
-        <CounterButton callback={() => setCount(count * count)} title="Count **" />
-        <CounterButton callback={() => setCount(0)} title="Reset Count" />
+        <CounterButton onClick={() => setCount(count + 1)} title="Count ++" />
+        <CounterButton onClick={() => setCount(count - 1)} title="Count --" />
+        <CounterButton onClick={() => setCount(count * count)} title="Count **" />
+        <CounterButton onClick={() => setCount(0)} title="Reset Count" />
       </div>
     )
 }
