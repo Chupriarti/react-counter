@@ -8,7 +8,7 @@ export const SimpleCounter = () => {
     const [count, setCount] = React.useState(0);
     return (
       <div className="simpleCounter">
-        <Header title = "React Counter" />
+        <Header title = "React Simple Counter" />
         <CountView count={count} />
         <CounterButton callback={() => setCount(count + 1)} title="Count ++" />
         <CounterButton callback={() => setCount(count - 1)} title="Count --" />
