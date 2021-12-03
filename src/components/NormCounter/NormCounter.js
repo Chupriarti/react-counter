@@ -20,10 +20,11 @@ const calculate = (a, b, op) => {
 } 
 
 export const NormCounter = () => {
-    const [a, setA] = React.useState(null);
-    const [b, setB] = React.useState(null);
+    const [a, setA] = React.useState("");
+    const [b, setB] = React.useState("");
     const [currentPart, setCurrentPart] = React.useState(0);
-    const [op, setOp] = React.useState(null);
+    const [op, setOp] = React.useState("");
+
     return (
       <div className="normCounter">
         <Header title = "React Norm Counter" />
