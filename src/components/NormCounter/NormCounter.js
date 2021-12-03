@@ -27,7 +27,7 @@ export const NormCounter = () => {
     return (
       <div className="normCounter">
         <Header title = "React Norm Counter" />
-        <CountView count={a + b} />
+        <CountView count={calculate(a, b, op)} />
         <table>
           <tr>
             <td><CounterButton onClick={() => setA(1)} title="1" /></td>
