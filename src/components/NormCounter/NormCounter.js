@@ -40,14 +40,17 @@ export const NormCounter = () => {
     }
 
     const showResult = () => {
+      let result = 0;
       if (calculateResult){
-        return calculate(a, b, op)
+        result = calculate(a, b, op)
       }
       else if (currentPartA) {
-        return a;
+        result = a;
       } else {
-        return b;
+        result = b;
       }
+      if (result === "") result = 0;
+      return result
     }
 
     const clearResult = () => {
