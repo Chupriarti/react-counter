@@ -54,6 +54,8 @@ export const NormCounter = () => {
       setA("");
       setB("");
       setOp("");
+      setCurrentPartA(true);
+      setCalculateResult(false);
     }
 
     return (
