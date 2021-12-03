@@ -45,7 +45,13 @@ export const NormCounter = () => {
         return b;
       }
     }
-    
+
+    const clearResult = () => {
+      setA("");
+      setB("");
+      setOp("");
+    }
+
     return (
       <div className="normCounter">
         <Header title = "React Norm Counter" />
@@ -76,6 +82,11 @@ export const NormCounter = () => {
               <td><CounterButton onClick={() => changeOperator("-")} title="-" /></td>
               <td><CounterButton onClick={() => changeOperator("/")} title="/" /></td>
               <td><CounterButton onClick={() => changeOperator("*")} title="*" /></td>
+            </tr>
+            <tr>
+              <td colspan="3"><CounterButton onClick={clearResult} title="Clear" /></td>
+              <td></td>
+              <td></td>
             </tr>
           </tbody>
         </table>
