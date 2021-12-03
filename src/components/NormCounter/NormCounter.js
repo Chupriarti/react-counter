@@ -24,6 +24,7 @@ export const NormCounter = () => {
     const [b, setB] = React.useState("");
     const [currentPartA, setCurrentPartA] = React.useState(true);
     const [op, setOp] = React.useState("");
+    const [calculateResult, setCalculateResult] = React.useState(false);
 
     const changeDigits = (digit) => {
       if (currentPartA){
@@ -39,7 +40,10 @@ export const NormCounter = () => {
     }
 
     const showResult = () => {
-      if (currentPartA) {
+      if (calculateResult){
+        return calculate(a, b, op)
+      }
+      else if (currentPartA) {
         return a;
       } else {
         return b;
@@ -76,7 +80,7 @@ export const NormCounter = () => {
             <tr>
               <td><CounterButton onClick={() => changeOperator("+")} title="+" /></td>
               <td><CounterButton onClick={() => changeDigits("0")} title="0" /></td>
-              <td><CounterButton title="=" /></td>
+              <td><CounterButton onClick={() => setCalculateResult(true)} title="=" /></td>
             </tr>
             <tr>
               <td><CounterButton onClick={() => changeOperator("-")} title="-" /></td>
