@@ -30,31 +30,33 @@ export const NormCounter = () => {
         <Header title = "React Norm Counter" />
         <CountView count={calculate(a, b, op)} />
         <table>
-          <tr>
-            <td><CounterButton onClick={() => setA(1)} title="1" /></td>
-            <td><CounterButton onClick={() => setA(2)} title="2" /></td>
-            <td><CounterButton onClick={() => setA(3)} title="3" /></td>
-          </tr>
-          <tr>
-            <td><CounterButton onClick={() => setA(4)} title="4" /></td>
-            <td><CounterButton onClick={() => setA(5)} title="5" /></td>
-            <td><CounterButton onClick={() => setA(6)} title="6" /></td>
-          </tr>
-          <tr>
-            <td><CounterButton onClick={() => setB(7)} title="7" /></td>
-            <td><CounterButton onClick={() => setB(8)} title="8" /></td>
-            <td><CounterButton onClick={() => setB(9)} title="9" /></td>
-          </tr>
-          <tr>
-            <td><CounterButton onClick={() => setOp("+")} title="+" /></td>
-            <td><CounterButton onClick={() => setB(0)} title="0" /></td>
-            <td><CounterButton title="=" /></td>
-          </tr>
-          <tr>
-            <td><CounterButton onClick={() => setOp("-")} title="-" /></td>
-            <td><CounterButton onClick={() => setOp("/")} title="/" /></td>
-            <td><CounterButton onClick={() => setOp("*")} title="*" /></td>
-          </tr>
+          <tbody>
+            <tr>
+              <td><CounterButton onClick={() => setA(1)} title="1" /></td>
+              <td><CounterButton onClick={() => setA(2)} title="2" /></td>
+              <td><CounterButton onClick={() => setA(3)} title="3" /></td>
+            </tr>
+            <tr>
+              <td><CounterButton onClick={() => setA(4)} title="4" /></td>
+              <td><CounterButton onClick={() => setA(5)} title="5" /></td>
+              <td><CounterButton onClick={() => setA(6)} title="6" /></td>
+            </tr>
+            <tr>
+              <td><CounterButton onClick={() => setB(7)} title="7" /></td>
+              <td><CounterButton onClick={() => setB(8)} title="8" /></td>
+              <td><CounterButton onClick={() => setB(9)} title="9" /></td>
+            </tr>
+            <tr>
+              <td><CounterButton onClick={() => setOp("+")} title="+" /></td>
+              <td><CounterButton onClick={() => setB(0)} title="0" /></td>
+              <td><CounterButton title="=" /></td>
+            </tr>
+            <tr>
+              <td><CounterButton onClick={() => setOp("-")} title="-" /></td>
+              <td><CounterButton onClick={() => setOp("/")} title="/" /></td>
+              <td><CounterButton onClick={() => setOp("*")} title="*" /></td>
+            </tr>
+          </tbody>
         </table>
       </div>
     )
