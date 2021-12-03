@@ -4,6 +4,21 @@ import Header from '../Header/Header';
 import CountView from '../CountView/CountView';
 import CounterButton from '../CounterButton/CounterButton';  
 
+const calculate = (a, b, op) => {
+  switch (op){
+    case "+":
+      return a + b; 
+    case "-":
+      return a - b; 
+    case "*":
+      return a * b; 
+    case "/":
+      return a / b;
+    default:
+      return 0;
+  }
+} 
+
 export const NormCounter = () => {
     const [a, setA] = React.useState(null);
     const [b, setB] = React.useState(null);
